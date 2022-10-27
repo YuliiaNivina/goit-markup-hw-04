@@ -5,9 +5,9 @@
   --main-white-color: #ffffff;
   --background-gray: #f5f4fa;
   --button-hover: #188ce8;
-  --socials-icon: #AFB1B8;
+  --socials-icon: #afb1b8;
   --card-gap: 30px;
-  --border-radius: 4px
+  --border-radius: 4px;
 }
 
 body {
@@ -23,7 +23,8 @@ h2,
 h3,
 h4,
 h5,
-h6, p {
+h6,
+p {
   margin: 0;
 }
 
@@ -125,17 +126,17 @@ img {
 
   margin-left: auto;
 }
-.contacts>.item {
+.contacts > .item {
   color: var(--secondary-text-color);
 
   display: flex;
   align-items: center;
 }
-.contacts>.item:not(:last-child) {
+.contacts > .item:not(:last-child) {
   margin-right: 50px;
 }
-.contacts>.item:hover,
-.contacts>.item:focus {
+.contacts > .item:hover,
+.contacts > .item:focus {
   color: var(--link-color);
 }
 .contacts-link {
@@ -146,14 +147,14 @@ img {
   color: currentColor;
 }
 
-.icon-mail{
+.icon-mail {
   width: 16px;
   height: 12px;
   fill: currentColor;
 
   margin-right: 10px;
 }
-.icon-tel{
+.icon-tel {
   width: 10px;
   height: 16px;
   fill: currentColor;
@@ -255,7 +256,7 @@ img {
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
 } */
-.benefits-icon{
+.benefits-icon {
   width: 270px;
   height: 120px;
   background-color: var(--background-gray);
@@ -322,7 +323,6 @@ img {
 }
 .member-text {
   padding: var(--card-gap) 32px;
-  
 }
 .member-name {
   font-weight: 500;
@@ -340,13 +340,13 @@ img {
 }
 
 /* Соцмережі */
-.socials{
+.socials {
   display: flex;
 }
 .item-socials:not(:last-child) {
   margin-right: 10px;
 }
-.link-socials{
+.link-socials {
   display: block;
   width: 44px;
   height: 44px;
@@ -354,7 +354,7 @@ img {
 
   padding: 12px;
 }
-.link-socials:hover{
+.link-socials:hover {
   color: var(--main-white-color);
   background-color: var(--link-color);
   border-radius: 50%;
@@ -366,29 +366,29 @@ img {
 }
 
 /* Клієнти */
-.clients{
+.clients {
   display: flex;
   flex-wrap: wrap;
   gap: var(--card-gap);
 }
-.item-clients{
-  flex-basis: calc((100% - 30*5) / 6);
+.item-clients {
+  flex-basis: calc((100% - var(--card-gap) * 5) / 6);
 }
-.link-clients{
+.link-clients {
   color: var(--socials-icon);
   display: block;
   width: 170px;
-    height: 92px;
-    border: 1px solid var(--socials-icon);
-    border-radius: 4px;
-    
-    padding: 16px 32px;
+  height: 92px;
+  border: 1px solid var(--socials-icon);
+  border-radius: 4px;
+
+  padding: 16px 32px;
 }
-.link-clients:hover{
+.link-clients:hover {
   color: var(--link-color);
   border: 1px solid var(--link-color);
 }
-.icon-clients{
+.icon-clients {
   width: 106px;
   height: 60px;
   fill: currentColor;
@@ -421,7 +421,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.71;
 }
-.item-contacts:not(:last-child){
+.item-contacts:not(:last-child) {
   margin-bottom: 9px;
 }
 .contacts-link.map {
@@ -451,7 +451,7 @@ img {
   /* background-repeat: no-repeat;
   background-position: center; */
 }
-.footer .icon-socials{
+.footer .icon-socials {
   fill: var(--main-white-color);
 }
 /* .social .instagram {
@@ -514,8 +514,8 @@ img {
   margin-right: var(--card-gap);
   margin-bottom: var(--card-gap);
 }
- .item-portfolio:hover,
- .item-portfolio:focus{
+.item-portfolio:hover,
+.item-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
