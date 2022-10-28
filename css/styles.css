@@ -126,27 +126,23 @@ img {
 
   margin-left: auto;
 }
-.contacts > .item {
-  color: var(--secondary-text-color);
-
-  display: flex;
-  align-items: center;
-}
 .contacts > .item:not(:last-child) {
   margin-right: 50px;
 }
-.contacts > .item:hover,
-.contacts > .item:focus {
-  color: var(--link-color);
-}
 .contacts-link {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: currentColor;
+  color: var(--secondary-text-color);
 }
-
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--link-color);
+}
 .icon-mail {
   width: 16px;
   height: 12px;
@@ -256,14 +252,20 @@ img {
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
 } */
-.benefits-icon {
+.benefits-icon-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--card-gap);
+
   width: 270px;
   height: 120px;
   background-color: var(--background-gray);
   border-radius: var(--border-radius);
-
-  padding: 25px 100px;
-  margin-bottom: var(--card-gap);
+}
+.benefits-icon {
+  width: 70px;
+  height: 70px;
 }
 .benefits-title {
   font-size: 14px;
@@ -347,17 +349,18 @@ img {
   margin-right: 10px;
 }
 .link-socials {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  color: var(--socials-icon);
 
-  padding: 12px;
+  border-radius: 50%;
+  color: var(--socials-icon);
 }
-.link-socials:hover {
+.link-socials:hover, .link-socials:focus {
   color: var(--main-white-color);
   background-color: var(--link-color);
-  border-radius: 50%;
 }
 .icon-socials {
   width: 20px;
@@ -376,15 +379,16 @@ img {
 }
 .link-clients {
   color: var(--socials-icon);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
+
   border: 1px solid var(--socials-icon);
   border-radius: 4px;
-
-  padding: 16px 32px;
 }
-.link-clients:hover {
+.link-clients:hover, .link-clients:focus {
   color: var(--link-color);
   border: 1px solid var(--link-color);
 }
@@ -410,11 +414,14 @@ img {
 }
 
 /* Контакти футер */
+.contacts-footer-box{
+  margin-right: 70px;
+}
 .contacts-footer {
   font-style: normal;
 
   margin-top: 20px;
-  margin-right: 70px;
+  
 }
 .contacts-footer .contacts-link {
   text-decoration: none;
@@ -514,8 +521,13 @@ img {
   margin-right: var(--card-gap);
   margin-bottom: var(--card-gap);
 }
-.item-portfolio:hover,
-.item-portfolio:focus {
+.link-portfolio{
+  display: block;
+  text-decoration: none;
+  color: currentColor;
+}
+.link-portfolio:hover,
+.link-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
